@@ -1,0 +1,48 @@
+# GitHub Copilot App Modernization Extension Pack for Java
+
+Accelerate Java upgrades and cloud migrations with this all-in-one extension pack for GitHub Copilot App Modernization for Java.
+
+This extension pack brings together everything you need to modernize legacy Java applications and migrate them to Azure using Visual Studio Code’s Agent Mode. It combines GitHub Copilot’s AI capabilities with the scalability of Microsoft Azure to deliver an intelligent, automated, and guided modernization experience.
+
+# Extensions Included
+
+By installing GitHub Copilot App Modernization Extension Pack for Java, the following extensions are installed:
+- [GitHub Copilot App Modernization for Java (Preview)](https://marketplace.visualstudio.com/items?itemName=vscjava.migrate-java-to-azure)  
+GitHub Copilot App Modernization for Java (Preview) aims to help you migrate your Java applications to Azure with confidence and efficiency, powered by GitHub Copilot.
+    - Evaluate the readiness of your application for migration to Azure
+    - Recommend target Azure services for the resource dependencies of your application
+    - Apply predefined code change patterns that represents best practices from experts
+    - Pick your existing changes from one application to repeat on another
+    - Automatically find and fix compilation errors introduced by the code changes
+- [GitHub Copilot App Modernization - upgrade for Java (Preview)](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-upgrade)  
+GitHub Copilot app modernization - upgrade for Java (Preview) is an AI-based agentic solution designed to assist with upgrading your Java apps.
+    - Analyze the project and its dependencies and propose an upgrade plan
+    - Execute the plan to transform the project
+    - Automatically fix issues during the upgrade process
+    - Report all details including commits, logs, and output
+    - Perform a check for Common Vulnerabilities and Exposures (CVE) security vulnerabilities and code inconsistencies after the upgrade
+    - Show a summary including file changes, updated dependencies, and fixed issues
+    - Generate unit test cases separately from the upgrade process
+
+# How do I get started?
+
+This extension pack relies on the capabilities of GitHub Copilot, and you need:
+- [A GitHub account with GitHub Copilot enabled](https://github.com/features/copilot)
+    - GitHub Copilot App Modernization for Java is supported on any plan, including the Free plan
+    - GitHub Copilot App Modernization - upgrade for Java requires Business plan or Enterprise plan
+- [The GitHub Copilot extension](https://code.visualstudio.com/docs/copilot/overview)
+    - The latest version is recommended
+
+# Documentation
+
+Learn more about the tools from the documentation below.
+- [GitHub Copilot App Modernization for Java (Preview)](https://aka.ms/am4joverview)
+- [GitHub Copilot App Modernization - upgrade for Java (Preview)](https://aka.ms/ghcp-appmod/java-upgrade-docs)
+
+# License
+ 
+This extension pack is licensed under [GitHub Copilot Product Specifc Terms](https://github.com/customer-terms/github-copilot-product-specific-terms).
+
+# Feedback
+
+Post your feedback [here](https://aka.ms/AM4JFeedback) for any issues or suggestions you may have. Thank you for letting us know what's on your mind!

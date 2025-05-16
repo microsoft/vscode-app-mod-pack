@@ -1,0 +1,43 @@
+{
+  "name": "vscode-app-mod-pack",
+  "icon": "assets/icon_128x.png",
+  "publisher": "vscjava",
+  "displayName": "GitHub Copilot App Modernization",
+  "description": "Modernize your Java applications with GitHub Copilot.",
+  "version": "0.1.0",
+  "engines": {
+    "vscode": "^1.99.0"
+  },
+  "categories": [
+    "Extension Packs"
+  ],
+  "extensionPack": [ 
+    "vscjava.vscode-java-upgrade",
+    "vscjava.migrate-java-to-azure"
+  ],
+  "keywords": [
+    "extension-pack",
+    "java",
+    "modernization",
+    "github copilot",
+    "azure",
+    "migrate",
+    "upgrade"
+  ],
+  "capabilities": {
+    "virtualWorkspaces": {
+      "supported": false
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "homepage": "",
+  "bugs": {
+    "url": "https://aka.ms/AM4JFeedback"
+  },
+  "scripts": {
+    "package": "npx vsce package"
+  }
+}
