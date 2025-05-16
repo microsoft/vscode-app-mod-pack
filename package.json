@@ -29,11 +29,11 @@
       "supported": false
     }
   },
+  "homepage": "https://github.com/microsoft/vscode-app-mod-pack",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/microsoft/vscode-app-mod-pack.git"
   },
-  "homepage": "",
   "bugs": {
     "url": "https://aka.ms/AM4JFeedback"
   },
