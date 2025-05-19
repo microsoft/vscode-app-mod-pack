@@ -1,0 +1,73 @@
+name: $(Date:yyyyMMdd).$(Rev:r)
+variables:
+    - name: Codeql.Enabled
+      value: true
+resources:
+    repositories:
+        - repository: self
+          type: git
+          ref: refs/heads/main
+        - repository: MicroBuildTemplate
+          type: git
+          name: 1ESPipelineTemplates/MicroBuildTemplate
+trigger: none
+extends:
+    template: azure-pipelines/MicroBuild.1ES.Official.yml@MicroBuildTemplate
+    parameters:
+        pool:
+            name: MSEngSS-MicroBuild2022-1ES
+        stages:
+            - stage: Build
+              jobs:
+                  - job: Job_1
+                    displayName: RC
+                    templateContext:
+                        mb:
+                            signing:
+                                enabled: true
+                                signType: real
+                                zipSources: false
+                                feedSource: 'https://mseng.pkgs.visualstudio.com/DefaultCollection/_packaging/MicroBuildToolset/nuget/v3/index.json'
+                        outputs:
+                            - output: pipelineArtifact
+                              artifactName: vsix
+                              targetPath: $(Build.ArtifactStagingDirectory)
+                              displayName: 'Publish Artifact: vsix'
+                    steps:
+                        - checkout: self
+                          clean: true
+                          fetchTags: false
+                        - task: NodeTool@0
+                          displayName: Use Node 20.x
+                          inputs:
+                              versionSpec: 20.x
+                        - task: Npm@1
+                          displayName: Npm Install
+                          inputs:
+                              verbose: false
+                        - task: PowerShell@2
+                          displayName: 'Update package.json and package'
+                          inputs:
+                              targetType: inline
+                              script: |
+                                  if ($env:isPreRelease -eq "true") {
+                                      npm run package -- -o extension.vsix --pre-release
+                                  } else {
+                                      npm run package -- -o extension.vsix
+                                  }
+                        - script: npx @vscode/vsce@latest generate-manifest -i extension.vsix -o extension.manifest
+                          displayName: 'Generate Extension Manifest'
+                        - script: copy extension.manifest extension.signature.p7s
+                          displayName: 'Prepare Manifest for Signing'
+                        - task: CmdLine@2
+                          displayName: 'Sign Extension'
+                          inputs:
+                              script: dotnet %MBSIGN_APPFOLDER%/ddsignfiles.dll /file:extension.signature.p7s /certs:4014052
+                        - task: CopyFiles@2
+                          displayName: 'Copy Files to: $(Build.ArtifactStagingDirectory)'
+                          inputs:
+                              Contents: |
+                                  extension.vsix
+                                  extension.manifest
+                                  extension.signature.p7s
+                              TargetFolder: $(Build.ArtifactStagingDirectory)
