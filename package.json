@@ -2,9 +2,10 @@
   "name": "vscode-app-mod-pack",
   "icon": "assets/icon_128x.png",
   "publisher": "vscjava",
-  "displayName": "GitHub Copilot App Modernization",
+  "preview": true,
+  "displayName": "GitHub Copilot app modernization extension pack for Java",
   "description": "Modernize your Java applications with GitHub Copilot.",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "engines": {
     "vscode": "^1.99.0"
   },
