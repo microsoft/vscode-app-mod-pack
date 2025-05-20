@@ -50,10 +50,10 @@ extends:
                           inputs:
                               targetType: inline
                               script: |
-                                  if ($env:isPreRelease -eq "true") {
-                                      npm run package -- -o extension.vsix --pre-release
-                                  } else {
+                                  if ($env:STABLE_RELEASE -eq "true") {
                                       npm run package -- -o extension.vsix
+                                  } else {
+                                      npm run package -- -o extension.vsix --pre-release
                                   }
                         - script: npx @vscode/vsce@latest generate-manifest -i extension.vsix -o extension.manifest
                           displayName: 'Generate Extension Manifest'
