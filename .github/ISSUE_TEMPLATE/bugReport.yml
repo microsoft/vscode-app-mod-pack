@@ -1,0 +1,46 @@
+name: Bug Report
+description: Report a bug or issue with the extension
+title: "[Bug]: "
+labels: bug
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for using the extension. Please provide as much detail as possible to help us understand and resolve the issue you found.
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Describe the environment
+      placeholder: "Extension name:\nExtension version:\nVS Code version:\nGithub Copilot Chat version:\nSelected model:\nOS:\n"
+    validations:
+      required: true
+    
+  - type: textarea
+    id: how-to-reproduce
+    attributes:
+      label: How to Reproduce
+      description: Provide step-by-step instructions on how to reproduce the issue.
+      placeholder: "1. Open VS Code\n2. Run command...\n3. See error..."
+    validations:
+      required: true
+     
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: Describe what you expected to happen. 
+      placeholder: "I expect to see..."
+    validations:
+      required: true
+      
+  - type: textarea
+    id: description
+    attributes:
+      label: Screenshots & Logs
+      description: Describe the issue you are encountering.
+      placeholder: "Please zip the '.github/javaupgrade/$session' folder from your project root and/or provide the chat history from VS Code Copilot Chat."
+    validations:
+      required: false
