@@ -36,7 +36,7 @@ This extension pack relies on the capabilities of GitHub Copilot, and you need:
 # Documentation
 
 Learn more about the tools from the documentation below.
-- [GitHub Copilot app modernization for Java (Preview)](https://aka.ms/am4joverview)
+- [GitHub Copilot app modernization for Java (Preview)](https://aka.ms/AM4JGetStarted)
 - [GitHub Copilot app modernization - upgrade for Java (Preview)](https://aka.ms/ghcp-appmod/java-upgrade-docs)
 
 # License
@@ -45,4 +45,4 @@ This extension pack is licensed under [GitHub Copilot Product Specifc Terms](htt
 
 # Feedback
 
-Post your feedback [here](https://aka.ms/AM4JFeedback) for any issues or suggestions you may have. Thank you for letting us know what's on your mind!
+We value your feedback — share [your thoughts here](https://aka.ms/AM4JFeedback) to help us continue improving the product.
