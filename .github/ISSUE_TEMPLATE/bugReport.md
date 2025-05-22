@@ -10,6 +10,8 @@ assignees: ''
 <!-- Provide a clear and concise description of the issue. -->
 
 ### Environment
+- **Extension name**: <!-- e.g. vscode-java-upgrade, migrate-to-azure -->
+- **Extension version**: <!-- e.g. 0.14.0 -->
 - **VS Code version**:  <!-- vscode version, e.g. 1.100.0-insider -->
 - **Github Copilot Chat version**: <!-- e.g. 0.27.2025042401 -->
 - **Selected model**: <!-- e.g. gpt-4o -->
