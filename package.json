@@ -4,7 +4,7 @@
   "publisher": "vscjava",
   "preview": true,
   "displayName": "GitHub Copilot app modernization extension pack for Java",
-  "description": "Modernize your Java applications with GitHub Copilot.",
+  "description": "Modernize, upgrade, and seamlessly migrate your Java applications to the cloud using GitHub Copilot.",
   "version": "0.1.2",
   "engines": {
     "vscode": "^1.99.0"

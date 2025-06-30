@@ -28,10 +28,11 @@ GitHub Copilot app modernization - upgrade for Java (Preview) is an AI-based age
 
 This extension pack relies on the capabilities of GitHub Copilot, and you need:
 - [A GitHub account with GitHub Copilot enabled](https://github.com/features/copilot)
-    - GitHub Copilot app modernization for Java is supported on any plan, including the Free plan
-    - GitHub Copilot app modernization - upgrade for Java requires Business plan or Enterprise plan
+    - Pro, Pro+, Business or Enterprise plan is needed for both GitHub Copilot app modernization for Java and GitHub Copilot app modernization - upgrade for Java
 - [The GitHub Copilot extension](https://code.visualstudio.com/docs/copilot/overview)
     - The latest version is recommended
+- [AppCAT for Java](https://aka.ms/appcat-install)
+    - For the assessment feature of GitHub Copilot app modernization for Java
 
 # Documentation
 
