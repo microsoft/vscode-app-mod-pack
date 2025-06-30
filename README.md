@@ -7,8 +7,8 @@ This extension pack brings together everything you need to modernize legacy Java
 # Extensions Included
 
 By installing GitHub Copilot app modernization extension pack for Java, the following extensions are installed:
-- [GitHub Copilot app modernization for Java (Preview)](https://marketplace.visualstudio.com/items?itemName=vscjava.migrate-java-to-azure)  
-GitHub Copilot app modernization for Java (Preview) aims to help you migrate your Java applications to Azure with confidence and efficiency, powered by GitHub Copilot.
+- [GitHub Copilot app modernization for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.migrate-java-to-azure)  
+GitHub Copilot app modernization for Java aims to help you migrate your Java applications to Azure with confidence and efficiency, powered by GitHub Copilot.
     - Evaluate the readiness of your application for migration to Azure
     - Recommend target Azure services for the resource dependencies of your application
     - Apply predefined code change patterns that represents best practices from experts
@@ -37,7 +37,7 @@ This extension pack relies on the capabilities of GitHub Copilot, and you need:
 # Documentation
 
 Learn more about the tools from the documentation below.
-- [GitHub Copilot app modernization for Java (Preview)](https://aka.ms/AM4JGetStarted)
+- [GitHub Copilot app modernization for Java](https://aka.ms/AM4JGetStarted)
 - [GitHub Copilot app modernization - upgrade for Java (Preview)](https://aka.ms/ghcp-appmod/java-upgrade-docs)
 
 # License
