@@ -1,5 +1,5 @@
-name: Bug Report
-description: Report a bug or issue with the extension
+name: DotNet AppMod Bug Report
+description: Report a bug or issue with the .NET App Modernization extension
 title: "[Bug]: "
 labels: bug
 
