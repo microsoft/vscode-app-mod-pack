@@ -41,6 +41,6 @@ body:
     attributes:
       label: Screenshots & Logs
       description: Describe the issue you are encountering.
-      placeholder: "Please find and zip the latest log file under 'C:\Users\<user>\AppData\Local\Temp\VSGitHubCopilotLogs' folder to provide the chat history from VS Copilot Chat."
+      placeholder: "Please find and zip the latest log file under 'C:\\Users\\<user>\\AppData\\Local\\Temp\\VSGitHubCopilotLogs' folder to provide the chat history from VS Copilot Chat."
     validations:
       required: false
