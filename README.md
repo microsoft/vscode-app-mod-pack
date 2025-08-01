@@ -1,49 +1,50 @@
-# GitHub Copilot app modernization extension pack for Java
+# Analyze applications and migrate to Azure by using GitHub Copilot App Modernization
 
-Accelerate Java upgrades and cloud migrations with this all-in-one extension pack for GitHub Copilot app modernization for Java.
+GitHub Copilot App Modernization is a tool covering application migration to Azure end to end, from application analysis, planning, code remediation, build fix, and unit test fix. It aims to help you migrate to and run your applications on Azure with confidence and accelerate the whole cycle, powered by the artificial intelligence of GitHub Copilot.
 
-This extension pack brings together everything you need to modernize legacy Java applications and migrate them to Azure using Visual Studio Code’s Agent Mode. It combines GitHub Copilot’s AI capabilities with the scalability of Microsoft Azure to deliver an intelligent, automated, and guided modernization experience.
+## Six value pillars
 
-# Extensions Included
+GitHub Copilot App Modernization provides six distinct value pillars, each tailored to address particular challenges encountered during the application modernization process.
 
-By installing GitHub Copilot app modernization extension pack for Java, the following extensions are installed:
-- [GitHub Copilot app modernization for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.migrate-java-to-azure)  
-GitHub Copilot app modernization for Java aims to help you migrate your Java applications to Azure with confidence and efficiency, powered by GitHub Copilot.
-    - Evaluate the readiness of your application for migration to Azure
-    - Recommend target Azure services for the resource dependencies of your application
-    - Apply predefined code change patterns that represents best practices from experts
-    - Pick your existing changes from one application to repeat on another
-    - Automatically find and fix compilation errors introduced by the code changes
-- [GitHub Copilot app modernization - upgrade for Java (Preview)](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-upgrade)  
-GitHub Copilot app modernization - upgrade for Java (Preview) is an AI-based agentic solution designed to assist with upgrading your Java apps.
-    - Analyze the project and its dependencies and propose an upgrade plan
-    - Execute the plan to transform the project
-    - Automatically fix issues during the upgrade process
-    - Report all details including commits, logs, and output
-    - Perform a check for Common Vulnerabilities and Exposures (CVE) security vulnerabilities and code inconsistencies after the upgrade
-    - Show a summary including file changes, updated dependencies, and fixed issues
-    - Generate unit test cases separately from the upgrade process
+![Value Pillars](assets/value-pillars.png)
 
-# How do I get started?
+### 1. Intelligent issue analysis and recommendations
 
-This extension pack relies on the capabilities of GitHub Copilot, and you need:
-- [A GitHub account with GitHub Copilot enabled](https://github.com/features/copilot)
-    - Pro, Pro+, Business or Enterprise plan is needed for both GitHub Copilot app modernization for Java and GitHub Copilot app modernization - upgrade for Java
-- [The GitHub Copilot extension](https://code.visualstudio.com/docs/copilot/overview)
-    - The latest version is recommended
-- [AppCAT for Java](https://aka.ms/appcat-install)
-    - For the assessment feature of GitHub Copilot app modernization for Java
+Modernization starts with insight. Whether you're upgrading a runtime or migrating to Azure, modernization starts with understanding your code.
 
-# Documentation
+GitHub Copilot App Modernization analyzes your project's current state and generates a modernization plan. It offers context-aware fixes and actionable recommendations from Azure Migrate Application Code Assessment Tool (AppCAT), so you spend less time diagnosing and more time modernizing.
 
-Learn more about the tools from the documentation below.
-- [GitHub Copilot app modernization for Java](https://aka.ms/AM4JGetStarted)
-- [GitHub Copilot app modernization - upgrade for Java (Preview)](https://aka.ms/ghcp-appmod/java-upgrade-docs)
+AppCAT is also available as a stand-alone CLI tool that you can run independently from the App Modernization Visual Studio Code extension. For more information, see [Azure Migrate application and code assessment](https://learn.microsoft.com/en-us/azure/migrate/appcat).
 
-# License
- 
-This extension pack is licensed under [GitHub Copilot Product Specifc Terms](https://github.com/customer-terms/github-copilot-product-specific-terms).
+### 2. Expert-led code transformation
 
-# Feedback
+After a plan is generated, GitHub Copilot App Modernization is a powerful code transformation engine that combines expert-led migration strategies. Copilot applies structured changes with precision.
 
-We value your feedback — share [your thoughts here](https://aka.ms/AM4JFeedback) to help us continue improving the product.
+For modernization scenarios, GitHub Copilot App Modernization offers predefined AI-powered tasks that encode proven migration strategies, applying expert knowledge to common Azure migration scenarios with high accuracy. Currently, app modernization offers predefined tasks that cover common migration scenarios including secret management, message queue integration, identity, and more.
+
+For upgrades, GitHub Copilot App Modernization uses tools like OpenRewrite to perform refactoring, including API replacements and dependency updates, while GitHub Copilot addresses any remaining issues.
+
+### 3. Automation through learning
+
+Beyond predefined tasks or strategies, you can capture migration logic into reusable tasks by converting Git commits into reusable migration patterns, or custom tasks. These custom tasks enable Copilot to apply learned remediations across multiple codebases with consistency and precision.
+
+Whether you're applying a fix in the upgrade or ensuring Azure migration consistency across teams, GitHub Copilot uses these learned patterns to accelerate transformation with precision and repeatability.
+
+### 4. Build issue resolution
+
+Modernization isn't complete until your application successfully builds. GitHub Copilot App Modernization helps resolve issues automatically and performs test validations, ensuring error-free transformations and keeping your production pipelines running smoothly.
+
+### 5. Automatic patching for CVEs
+
+GitHub Copilot App Modernization scans for Common Vulnerabilities and Exposures (CVEs) after the upgrade process is completed. When CVE issues are detected, the tool automatically fixes the issues within the Agent Mode, enabling you to review the fixes. This process improves your application's security posture and ensures compliance with organizational guidelines.
+
+### 6. Automated deployment to Azure
+
+When you're ready, GitHub Copilot for Azure helps facilitate automated deployment to Azure, completing the app modernization process. When you ask the Copilot agent to deploy your application, it creates the required Infrastructure as Code files, deploys the application, addresses any deployment errors encountered, and sets up CI/CD pipelines. GitHub Copilot for Azure is a separate extension today and efforts are underway to integrate it with GitHub Copilot App Modernization.
+
+## Get started today
+
+Use the following links to get started with GitHub Copilot App Modernization using the language of your choice:
+
+- [GitHub Copilot App Modernization for Java](https://learn.microsoft.com/en-us/azure/developer/java/migration/migrate-github-copilot-app-modernization-for-java)
+- [GitHub Copilot App Modernization for .NET (preview)](https://learn.microsoft.com/en-us/dotnet/azure/migration/appmod/overview)
