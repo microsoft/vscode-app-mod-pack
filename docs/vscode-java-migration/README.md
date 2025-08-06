@@ -10,7 +10,7 @@ Modernization starts with understanding your code. App modernization for Java ev
 
 ## Version and framework upgrade
 Seamlessly upgrade Java versions and associated frameworks to improve performance and security and reduces tech debt.
-![plan](https://aka.ms/appmod-java-migration-extension-assessment-image)
+![plan](plan.png)
 
 ## Solution recommendations
 
@@ -33,6 +33,10 @@ To imitate past changes on other applications, you may pick some git commits and
 ## Automatic fix for compilation errors
 
 After applying tasks, app modernization for Java will automatically find and fix compilation errors introduced by the code changes.
+
+## Post-Upgrade CVE Validation
+After the upgrade process is completed, the tool scans for CVE (Common Vulnerabilities and Exposures) issues and code inconsistencies. When such issues are detected, it automatically applies fixes within VS Code Agent Mode, allowing the user to review the changes. This enhances the application's security posture and ensures compliance with organizational guidelines.
+![CVE](cve.png)
 
 ## Unit Test generation and validation 
 At the end of the upgrade or migration process, app modernization for Java can generate unit test cases separately to increase test coverage, and ensure everything still works by validating unit tests.
