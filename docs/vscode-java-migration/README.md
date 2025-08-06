@@ -1,12 +1,16 @@
 # What is GitHub Copilot app modernization for Java?
 
-GitHub Copilot app modernization for Java aims to help you migrate your Java applications to Azure with confidence and efficiency, covering assessment, code remediation and validation, powered by the intelligence of GitHub Copilot.
+GitHub Copilot offers app modernization capabilities that allow developers to quickly assess, upgrade and modernize their Java and .NET applications with autonomous AI agents.
 
 ## Assessment of modernization issues
 
-App modernization for Java evaluates the readiness of your application for migration to Azure, with an interactive experience on VS Code, powered by [AppCAT for Java](https://aka.ms/appcat-install).
+Modernization starts with understanding your code. App modernization for Java evaluates the readiness of your application for version upgrade and Azure migration scenarios, with an interactive experience on VS Code, powered by [AppCAT for Java](https://aka.ms/appcat-install).
 
 ![Assessment](https://aka.ms/appmod-java-migration-extension-assessment-image)
+
+## Version and framework upgrade
+Seamlessly upgrade Java versions and associated frameworks to improve performance and security and reduces tech debt.
+![plan](plan.png)
 
 ## Solution recommendations
 
@@ -16,27 +20,32 @@ App modernization for Java recommends target Azure services for the resource dep
 
 ## Code remediation for common issues
 
-To accelerate code changes for [common modernization issues](https://aka.ms/migrate-github-copilot-app-modernization-for-java-predefined-formula), you may apply predefined formulas (code change patterns) that represent best practices from experts.
+To accelerate code changes for [common modernization issues](https://aka.ms/migrate-github-copilot-app-modernization-for-java-predefined-formula), you may apply predefined tasks (code change patterns) that represent best practices from experts.
 
 ![Apply Formula](https://aka.ms/appmod-java-migration-extension-apply-formula-image)
 
 ## Repeat changes from commits
 
-To imitate past changes on other applications, you may pick some git commits and/or the working tree diff, save them as a custom formula, then apply it just like a predefined formula.
+To imitate past changes on other applications, you may pick some git commits and/or the working tree diff, save them as a custom task, then apply it just like a predefined task.
 
 ![Custom Formula](https://aka.ms/appmod-java-migration-extension-custom-formula-image)
 
 ## Automatic fix for compilation errors
 
-After applying formulas, app modernization for Java will automatically find and fix compilation errors introduced by the code changes.
+After applying tasks, app modernization for Java will automatically find and fix compilation errors introduced by the code changes.
 
+## Post-Upgrade CVE Validation
+After the upgrade process is completed, the tool scans for CVE (Common Vulnerabilities and Exposures) issues and code inconsistencies. When such issues are detected, it automatically applies fixes within VS Code Agent Mode, allowing the user to review the changes. This enhances the application's security posture and ensures compliance with organizational guidelines.
+![CVE](cve.png)
+
+## Unit Test generation and validation 
+At the end of the upgrade or migration process, app modernization for Java can generate unit test cases separately to increase test coverage, and ensure everything still works by validating unit tests.
 
 # How do I get started?
 
 To use app modernization for Java, you need:
 * [A GitHub account with GitHub Copilot enabled](https://github.com/features/copilot) - Pro, Pro+, Business or Enterprise plan is needed
 * [The GitHub Copilot extension](https://code.visualstudio.com/docs/copilot/overview) - the latest version is recommended
-* [AppCAT for Java](https://aka.ms/appcat-install) - required for the assessment feature
 
 # Feedback
 
@@ -52,7 +61,7 @@ This project may contain trademarks or logos for projects, products, or services
 
 # Privacy statement
 
-App modernization for Java uses GitHub Copilot just like how you modify code with GitHub Copilot, which does not retain code snippets beyond the immediate session. We do not collect, transmit or store your custom formulas either. Please review the [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=521839) if necessary.
+App modernization for Java uses GitHub Copilot just like how you modify code with GitHub Copilot, which does not retain code snippets beyond the immediate session. We do not collect, transmit or store your custom tasks either. Please review the [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=521839) if necessary.
 
 Telemetry metrics are collected and analyzed to track feature usage and effectiveness. Learn more about [telemetry settings in VS Code](https://code.visualstudio.com/docs/configure/telemetry).
 
@@ -63,7 +72,8 @@ App modernization for Java uses GitHub Copilot to make code changes, and AI some
 # More information
 
 Here is some documentation that may be helpful.
-* [Common modernization issues with predefined formulas](https://aka.ms/migrate-github-copilot-app-modernization-for-java-predefined-formula)
+* [Common modernization issues with predefined tasks](https://aka.ms/migrate-github-copilot-app-modernization-for-java-predefined-formula)
+* [Java upgrade overview](https://aka.ms/java-upgrade-docs)
 * [Quickstart on using managed identity instead of passwords](https://aka.ms/migrate-github-copilot-app-modernization-for-java-quickstart-assess-migrate)
-* [Quickstart on creating and applying your own formula](https://aka.ms/migrate-github-copilot-app-modernization-for-java-quickstart-create-and-apply-your-own-formula)
+* [Quickstart on creating and applying your own task](https://aka.ms/migrate-github-copilot-app-modernization-for-java-quickstart-create-and-apply-your-own-formula)
 * [Frequently Asked Questions](https://aka.ms/migrate-github-copilot-app-modernization-for-java-faq)
