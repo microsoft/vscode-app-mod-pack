@@ -73,7 +73,7 @@ App modernization for Java uses GitHub Copilot to make code changes, and AI some
 
 Here is some documentation that may be helpful.
 * [Common modernization issues with predefined tasks](https://aka.ms/migrate-github-copilot-app-modernization-for-java-predefined-formula)
-* [Quickstart: upgrade a Java project] (https://learn.microsoft.com/en-us/java/upgrade/quickstart-upgrade)
+* [Java upgrade overview](https://aka.ms/java-upgrade-docs)
 * [Quickstart on using managed identity instead of passwords](https://aka.ms/migrate-github-copilot-app-modernization-for-java-quickstart-assess-migrate)
 * [Quickstart on creating and applying your own task](https://aka.ms/migrate-github-copilot-app-modernization-for-java-quickstart-create-and-apply-your-own-formula)
 * [Frequently Asked Questions](https://aka.ms/migrate-github-copilot-app-modernization-for-java-faq)
