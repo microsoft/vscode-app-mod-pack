@@ -2,12 +2,6 @@
 
 GitHub Copilot offers app modernization capabilities that allow developers to quickly assess, upgrade and modernize their Java and .NET applications with autonomous AI agents.
 
-## Assessment of modernization issues
-
-Modernization starts with understanding your code. App modernization for Java evaluates the readiness of your application for version upgrade and Azure migration scenarios, with an interactive experience on VS Code, powered by [AppCAT for Java](https://aka.ms/appcat-install).
-
-![Assessment](https://aka.ms/appmod-java-migration-extension-assessment-image)
-
 ## Version and framework upgrade
 Seamlessly upgrade Java versions and associated frameworks to improve performance and security and reduces tech debt.
 ![plan](plan.png)
