@@ -1,10 +1,10 @@
-# What is GitHub Copilot app modernization for Java?
+# What is GitHub Copilot app modernization?
 
 GitHub Copilot offers app modernization capabilities that allow developers to quickly assess, upgrade and modernize their Java and .NET applications with autonomous AI agents.
 
 ## Version and framework upgrade
 Seamlessly upgrade Java versions and associated frameworks to improve performance and security and reduces tech debt.
-![plan](plan.png)
+![plan](https://aka.ms/appmod-java-migration-extension-plan-img)
 
 ## Solution recommendations
 
@@ -30,7 +30,7 @@ After applying tasks, app modernization for Java will automatically find and fix
 
 ## Post-Upgrade CVE Validation
 After the upgrade process is completed, the tool scans for CVE (Common Vulnerabilities and Exposures) issues and code inconsistencies. When such issues are detected, it automatically applies fixes within VS Code Agent Mode, allowing the user to review the changes. This enhances the application's security posture and ensures compliance with organizational guidelines.
-![CVE](cve.png)
+![CVE](https://aka.ms/appmod-java-migration-extension-cve-img)
 
 ## Unit Test generation and validation 
 At the end of the upgrade or migration process, app modernization for Java can generate unit test cases separately to increase test coverage, and ensure everything still works by validating unit tests.
