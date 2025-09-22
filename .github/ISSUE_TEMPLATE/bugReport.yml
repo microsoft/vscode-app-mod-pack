@@ -2,6 +2,8 @@ name: Bug Report
 description: Report a bug or issue with the extension
 title: "[Bug]: "
 labels: bug
+## Feedback
+We’d love your feedback! Please fill out our [survey](https://aka.ms/ghcp-appmod/survey).
 
 body:
   - type: markdown
